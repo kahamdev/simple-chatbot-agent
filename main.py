@@ -28,7 +28,6 @@ def search_web(query: str) -> str:
         params={
             "engine": "google",
             "q": query,
-            "api_key": os.environ["SERPAPI_API_KEY"],
             "num": 5,
         },
         timeout=30,
