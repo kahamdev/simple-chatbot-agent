@@ -11,7 +11,7 @@ from langgraph.checkpoint.memory import InMemorySaver
 load_dotenv()
 
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
-os.environ["SERPAPI_API_KEY"] = os.getenv("SERPAPI_API_KEY") or os.getenv("SERPER_API_KEY")
+os.environ["SERPAPI_API_KEY"] = os.getenv("SERPAPI_API_KEY") 
 
 app = FastAPI(
     title="LangChain API",
